@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank</title>
+</head>
+<body>
+    <header>
+        
+        <h1 class="text-5xl text-center mt-6">Let's get some <span class="font-bold">Money-$</span></h1>
+        </header>
+
+        <main>
+            <section class="mt-12">
+                <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                    <div class="bg-blue-600 p-8 rounded-lg">
+                        <h2 class="text-2xl">Deposit</h2>
+                        <h2 class="text-5xl">$ <span id="deposit-total" >00</span></h2>
+                    </div>       
+                    <div class="bg-rose-600	p-8 rounded-lg">
+                        <h2 class="text-2xl">Widthdraw</h2>
+                        <h2 class="text-5xl">$ <span id="widthdraw-total">00</span></h2>
+                    </div>    
+                    <div class="bg-sky-300 p-8 rounded-lg">
+                        <h2 class="text-2xl">Balance</h2>
+                        <h2 class="text-5xl">$ <span id="balance-total">1000</span></h2>
+                    </div>    
+                </div>
+            </section>
+
+            <section class="mt-12">
+                <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                    <div class="bg-blue-600 p-8 rounded-lg">
+                        <h2 class="text-2xl mb-4">Please Deposit</h2>
+                        <div>
+                            <input  class="w-9/12 block mb-2 px-3" type="number" name="" id="deposit-field" placeholder="$ Please Amount">
+                          
+                            <button id="btn-deposit" class="bg-amber-600 px-8 py-2 text-white font-medium rounded-lg">Deposit Now</button>
+                        </div>
+                    </div>       
+                    <div class="bg-rose-600	p-8 rounded-lg">
+                        <h2 class="text-2xl mb-4">Please Widthdraw</h2>
+                        <div>
+                            <input  class="w-9/12 block mb-2 px-3" type="number" name="" id="widthdraw-field" placeholder="$ Please Amount">
+                          
+                            <button id="btn-widthdraw" class="bg-amber-600 px-8 py-2 text-white font-medium rounded-lg">Widthdraw Now</button>
+                        </div>
+                    </div>    
+                </div>
+          
+            </section>
+
+        </main>
+
+        <script src="js/login.js"></script>
+        <script src="js/deposit.js"></script>
+        <script src="js/widthdraw.js"></script>
+</body>
+</html>
